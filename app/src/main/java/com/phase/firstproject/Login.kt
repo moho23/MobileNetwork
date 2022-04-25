@@ -1,5 +1,6 @@
 package com.phase.firstproject
 
+import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.text.TextUtils
@@ -66,10 +67,15 @@ class Login : AppCompatActivity() {
             }
         }
 
-        binding.loginPasswordEditText.addTextChangedListener { it ->
+        binding.loginPasswordEditText.addTextChangedListener { text ->
             if (binding.loginPassword.editText?.text?.length != 0) {
                 binding.loginPassword.isErrorEnabled = false
             }
+        }
+
+        binding.redirectToSignupButton.setOnClickListener {
+            val intent = Intent(this, Signup::class.java)
+            startActivity(intent)
         }
 
         binding.loginFormButton.setOnClickListener {

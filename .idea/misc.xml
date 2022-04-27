@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/drawable/login_button.xml" value="0.303" />
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/drawable/login_image.xml" value="0.303" />
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/drawable/login_image_2.xml" value="0.303" />
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/drawable/new_button.xml" value="0.303" />
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/layout/activity_login.xml" value="0.2736212056434374" />
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Projects/Android/MobileNetwork/app/src/main/res/layout/activity_signup.xml" value="0.1" />
         <entry key="..\:/Projects/Android/University/MobileNetwork/P1/app/src/main/res/layout/activity_main.xml" value="0.16145307769929365" />
       </map>
     </option>

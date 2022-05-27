@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noteListFragment">
+
+    <fragment
+        android:id="@+id/noteDetailFragment"
+        android:name="com.phase.firstproject.noteDetail.NoteDetailFragment"
+        android:label="NoteDetailFragment">
+        <argument
+            android:name="note"
+            app:argType="com.phase.firstproject.model.NoteWithId" />
+        <action
+            android:id="@+id/action_noteDetailFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+        <action
+            android:id="@+id/action_noteDetailFragment_to_editNoteFragment"
+            app:destination="@id/editNoteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.phase.firstproject.noteList.NoteListFragment"
+        android:label="NoteListFragment">
+        <action
+            android:id="@+id/action_noteListFragment_to_noteDetailFragment"
+            app:destination="@id/noteDetailFragment" />
+        <action
+            android:id="@+id/action_noteListFragment_to_newNoteFragment"
+            app:destination="@id/newNoteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newNoteFragment"
+        android:name="com.phase.firstproject.newNote.NewNoteFragment"
+        android:label="NewNoteFragment">
+        <action
+            android:id="@+id/action_newNoteFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editNoteFragment"
+        android:name="com.phase.firstproject.editNote.EditNoteFragment"
+        android:label="EditNoteFragment">
+        <action
+            android:id="@+id/action_editNoteFragment_to_noteListFragment"
+            app:destination="@id/noteListFragment" />
+        <argument
+            android:name="note"
+            app:argType="com.phase.firstproject.model.NoteWithId" />
+    </fragment>
+</navigation>
